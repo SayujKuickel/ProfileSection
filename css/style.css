@@ -1,0 +1,136 @@
+:root {
+  --clr-primary: #6412a5;
+  --clr-error: #db2424;
+  --clr-text: #a1a1a1;
+}
+
+body {
+  background-color: var(--clr-text);
+  padding: 1rem;
+}
+
+.subtext {
+  font-size: 12px;
+}
+
+.btn {
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-inline: 2px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid var(--clr-primary);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.btn-error {
+  border-color: var(--clr-error);
+  background-color: var(--clr-error);
+  color: white;
+  margin: 8px;
+}
+
+.warn-container {
+  background: hsla(39, 100%, 50%, 0.2);
+  color: hsl(39, 83%, 41%);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 12px 10px;
+}
+.warn-container p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.section {
+  color: hsla(0, 0%, 11%, 0.646);
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-block: 2rem;
+  max-width: 768px;
+  margin-inline: auto;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.55);
+}
+
+.buttons-wrapper .subtext {
+  display: block;
+  margin-block: 6px;
+}
+
+.grid-2-cols {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media screen and (width <= 768px) {
+  .grid-2-cols {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile-section .profile-image {
+  border-radius: 10px;
+}
+
+.user-form {
+  padding-inline: 1rem;
+  margin-block: 1rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password] {
+  padding: 10px 5px;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid var(--clr-primary);
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=password]::-moz-placeholder {
+  color: var(--clr-text);
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=number]::placeholder,
+input[type=password]::placeholder {
+  color: var(--clr-text);
+}
+input[type=text]:focus, input[type=text]:active,
+input[type=email]:focus,
+input[type=email]:active,
+input[type=number]:focus,
+input[type=number]:active,
+input[type=password]:focus,
+input[type=password]:active {
+  outline: 0;
+}
+
+select {
+  padding: 10px 5px;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-text);
+}
+select:focus, select:active {
+  outline: 0;
+}/*# sourceMappingURL=style.css.map */

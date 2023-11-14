@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://sayujkuickel.github.io/r/r.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section class="section">
+      <h2 class="card-title">Profile Details</h2>
+      <div class="profile-section">
+        <img
+          src="https://i.pravatar.cc/150?img=2"
+          class="profile-image"
+          alt=""
+        />
+        <div class="buttons-wrapper">
+          <button class="btn btn-primary">Upload New Photo</button>
+          <button class="btn btn-error">Reset</button>
+          <span class="subtext"> Allowed JPG, GIF or PNG </span>
+        </div>
+      </div>
+
+      <form class="user-form grid-2-cols">
+        <input
+          type="text"
+          id="fname"
+          class="form__field"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          id="lname"
+          class="form__field"
+          placeholder="Last Name"
+        />
+
+        <input
+          type="email"
+          id="email"
+          class="form__field"
+          placeholder="Email"
+        />
+
+        <input
+          type="text"
+          id="Organization"
+          class="form__field"
+          placeholder="Organization"
+        />
+
+        <input
+          type="number"
+          id="phoneNumber"
+          class="form__field"
+          placeholder="Phone Number"
+        />
+
+        <input
+          type="email"
+          id="Address"
+          class="form__field"
+          placeholder="Address"
+        />
+
+        <input type="text" id="state" class="form__field" placeholder="state" />
+
+        <input
+          type="text"
+          id="zip"
+          class="form__field"
+          placeholder="zip Code"
+        />
+
+        <select class="select-text" id="countrySelect" required>
+          <option value="" disabled selected>country</option>
+        </select>
+
+        <select class="select-text" id="currencySelect" required>
+          <option value="" disabled selected>Currency</option>
+        </select>
+      </form>
+
+      <button class="btn btn-primary">Save Changes</button>
+      <button class="btn">Cancel</button>
+    </section>
+
+    <section class="section" id="del-section">
+      <h2>Delete account</h2>
+      <div class="warn-container">
+        <p>Are you sure you want to delete your account?</p>
+        <p>Account deletion is permanent and irreversible</p>
+      </div>
+
+      <p>
+        <input type="checkbox" name="del-confirm" />
+        <label for="del-confirm">i confirm my account deletion</label>
+      </p>
+
+      <button class="btn btn-error">deactivate Account</button>
+    </section>
+  </body>
+</html>
